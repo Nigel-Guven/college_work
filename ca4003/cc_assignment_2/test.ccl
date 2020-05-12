@@ -1,0 +1,35 @@
+integer getx (x:boolean)
+{
+    var i:integer;
+	
+	i = 2;
+	if(i==2)
+    {
+        x = false;
+    }
+    else 
+	{
+		x = true;
+	}
+	
+
+    return (x);
+}
+
+main
+{
+	var arg1:integer;
+	var arg2:integer;
+	var result:integer;
+	
+	const five:integer = 5;
+	
+	arg1 = -6;
+	arg2 = 5;
+	
+	result = 3;
+}
+
+
+
+

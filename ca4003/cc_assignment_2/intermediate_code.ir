@@ -1,0 +1,13 @@
+getx:
+i=2
+Seq2:
+t1 = i==2
+if False 
+t1 goto Seq3
+x=false
+Seq3:
+main:
+five = 5
+arg1=-6
+arg2=5
+result=3

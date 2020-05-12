@@ -1,0 +1,763 @@
+//******************************************
+// 
+/** FILE METADATA */
+// 
+// File: 		MyCCParser.jjt
+//
+// Author: 		NIGEL GUVEN 
+//
+// Description: Grammar file for CCAL Language
+//
+// Date: 		14/12/2019
+//
+// Due Date: 	16/12/2019
+//
+//******************************************
+
+/** JAVACC/JJTREE OPTIONS */
+
+options 
+{
+	//JavaCC Options
+	
+	DEBUG_PARSER = false;
+    JAVA_UNICODE_ESCAPE = true;
+	OUTPUT_DIRECTORY = ".";
+	
+	//JJTree Options
+	
+	NODE_DEFAULT_VOID = true;
+    MULTI = true;
+    VISITOR = true;	
+} 
+
+//******************************************
+
+/** JAVACC PARSER CLASS */
+
+PARSER_BEGIN(MyCCParser)
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.io.IOException;
+import java.util.*;
+
+public class MyCCParser 
+{
+    public static SymbolTable symboltable = new SymbolTable();
+    public static String scope = "global";
+
+	public static void writeThreeAddrCode(String str, File file) throws IOException
+	{
+		PrintWriter printwriter = new PrintWriter(file);
+		printwriter.print("");
+		printwriter.flush();
+		printwriter.close();
+		
+		FileWriter filewriter = new FileWriter(file, true);
+		filewriter.write(str);
+		filewriter.flush();
+		filewriter.close();
+	
+	}
+
+    public static void main(String[] args) 
+	{
+        MyCCParser parser;
+		
+		String irFileName = "intermediate_code.ir";
+		
+        if(args.length == 0) 
+		{
+			System.out.println ("Reading from standard input...");
+            parser = new MyCCParser(System.in);
+        } 
+		else if(args.length == 1) 
+		{
+            try 
+			{
+                parser = new MyCCParser(new java.io.FileInputStream(args[0])); 
+            } 
+			catch (java.io.FileNotFoundException f_error) 
+			{
+                System.out.println("Parser: " + f_error.getMessage());
+                return;
+            }
+
+        } 
+		else 
+		{
+            return;
+        }
+    	try 
+		{
+			
+            SimpleNode root = parser.Program();	
+			System.out.println ("CCAL language parsed successfully");
+			
+			System.out.println("**********Parser Walkthrough**********");
+			
+            root.dump("> ");
+			
+			System.out.println("**********Parser Walkthrough**********\n");
+			
+			
+			System.out.println("**********AST Tree**********\n");
+			
+            symboltable.print();
+			
+			System.out.println("\n**********AST Tree**********\n");
+			
+			
+			System.out.println("**********Semantic Analysis**********");
+			
+            SemanticAnalyser semantic_analyser = new SemanticAnalyser();
+            root.jjtAccept(semantic_analyser, symboltable);
+			
+			System.out.println("**********Semantic Analysis**********\n");
+			
+			
+			System.out.println("**********Intermediate Code Generation**********\n");
+			
+			IntermediateCodeGenerator intermediate_code_gen = new IntermediateCodeGenerator();
+			root.jjtAccept(intermediate_code_gen, null);
+			
+			try
+			{
+				File file = new File("intermediate_code.ir");
+				if(SemanticAnalyser.semanticCheckFlag==true)
+				{
+					writeThreeAddrCode(intermediate_code_gen.three_addr_code,file);
+				}
+				else if(SemanticAnalyser.semanticCheckFlag==false)
+				{
+					System.out.print("Semantic errors in program forced IRReadWriteException.");
+				}
+			}
+			catch (IOException io_error)
+			{
+				System.out.print("MyCCParser: Failed to write to" + irFileName);
+				System.out.println(io_error.getMessage());
+			} 
+			if(SemanticAnalyser.semanticCheckFlag==true)
+			{
+				System.out.print(" Three Address Code written to File: " + irFileName);
+			}
+
+			System.out.println();
+			System.out.println("\n**********Intermediate Code Generation**********");       
+        }    	
+       			
+		catch (ParseException p_error) 
+		{   
+            System.out.println("MyCCParser: Encountered errors during parse.");
+			System.out.println(p_error.getMessage());
+        }
+		catch (NullPointerException n_error)
+		{
+			System.out.println("MyCCParser: Encountered errors during parse.");
+			System.out.println(n_error.getMessage());
+	
+		}
+    }
+}
+PARSER_END(MyCCParser)
+
+//******************************************
+
+/** LEXICAL MANAGER */
+
+/** Variables and Methods used by the Token Manager */
+
+TOKEN_MGR_DECLS:
+{
+	static int nestedCounter = 0;
+}
+
+/** Whitespace, Control Characters */
+
+SKIP : 
+{
+    " "
+  | "\t"
+  | "\n" 
+  | "\r" 
+  | "\f" 
+}
+
+/** Comments, Single, Multi or Nested */
+
+SKIP:
+{
+		"/*" { nestedCounter++; }:COMMENT_NEST
+	| 
+		"//":SINGLE_COMMENT
+}
+
+<COMMENT_NEST> 
+SKIP:
+{
+		"/*" 
+		{ 
+			nestedCounter++; 
+		} 
+	| 
+		"*/" 
+		{ 
+			nestedCounter--;
+			if (nestedCounter == 0)
+			{
+				SwitchTo(DEFAULT);
+			}
+		}
+	| 
+		<~[]>
+}
+
+<SINGLE_COMMENT> 
+SKIP:
+{
+		<"\n" | "\r" | "\r\n" >:DEFAULT
+	| 
+		<~[]>
+}
+
+/** Reserved Words */
+
+TOKEN [IGNORE_CASE]:
+{
+    < VAR : "var" >
+  | < CONST : "const" >
+  | < RETURN : "return" >
+  | < INTEGER : "integer" >
+  | < BOOLEAN : "boolean" >
+  | < VOID : "void" >
+  | < MAIN : "main" >
+  | < IF : "if" >
+  | < ELSE : "else" >
+  | < TRUE : "true" >
+  | < FALSE : "false" >
+  | < WHILE : "while" >
+  | < NOP : "skip" >
+}
+
+/** Literals */
+
+TOKEN :
+{
+    < NUMBER : "0" | ((<SUB>)? ["1" - "9"] (<DIGIT>)*) >
+  | < IDENTIFIER : <LETTER> (<LETTER> | <DIGIT> | "_")* >
+  | < #DIGIT : ["0" - "9"] >
+  | < #LETTER : ["a" - "z", "A" - "Z"] >
+}
+
+/** Separators */
+
+TOKEN:
+{
+		< COMMA: ",">
+	|	< SEMICOLON: ";" >
+	|	< COLON: ":" >
+	|	< ASSIGNMENT: "=" >
+	|	< LBRACE: "{" >
+	|	< RBRACE: "}" >
+	|	< LPAREN: "(">
+	|	< RPAREN: ")">
+}	
+
+/** Arithmetic and Booleanean Logic */
+
+TOKEN:
+{
+		< ADD: "+">
+	|	< SUB: "-" >
+	|	< NEG: "~" >
+	|	< BOOL_OR: "||">
+	|	< BOOL_AND: "&&" >
+	|	< BOOL_EQUALS: "==" >
+	|	< BOOL_NOT_EQUALS: "!=" >
+	|	< BOOL_LESS: "<" >
+	|	< BOOL_LESS_EQUALS: "<=" >
+	|	< BOOL_GREATER: ">" >
+	|	< BOOL_GREATER_EQUALS: ">=" >
+}
+
+/** Set of All Unrecognised Tokens */
+
+TOKEN : 
+{
+    < UNICODE_CHAR : ~[] >
+}
+
+
+/***********************************
+ ***** SECTION 4 - THE GRAMMAR *****
+ ***********************************/
+
+// 1. 
+
+SimpleNode Program() #Program: 
+{}
+{
+    Decl_List() FunctionList() Main() 
+	<EOF> 
+	{
+		return jjtThis;
+	}
+}
+
+// 2.
+
+void Decl_List(): 
+{}
+{
+		Decl() <SEMICOLON> 
+		Decl_List()
+	| 
+		{}
+}
+
+// 3.
+
+void Decl():
+{}
+{
+		Variable_Decl()
+	| 
+		Constant_Decl()
+}
+
+// 4A.
+
+void Variable_Decl() #Variable_Decl: 
+{
+	Token t; 
+	String id; 
+	String type;
+}
+{
+    t = <VAR> id = Identifier() <COLON> type = Type() 
+	{ 
+		symboltable.put(id, type, "var", scope); 
+	}
+}
+
+//4B.
+
+String Identifier() #Tag:
+{
+	Token t;
+}
+{
+    t = <IDENTIFIER> 
+	{
+		jjtThis.value = t.image; 
+		return t.image;
+	}
+}
+
+// 5A.
+
+void Constant_Decl() #Constant_Decl: 
+{
+	Token t; 
+	String id; 
+	String type;
+}
+{
+    t = <CONST> id = Identifier() <COLON> type = Type() 
+	Constant_Assignment() 
+	{ 
+		symboltable.put(id, type, "const", scope); 
+	}
+}
+
+// 5B.
+
+void Constant_Assignment(): 
+{
+	Token t;
+}
+{
+    t = <ASSIGNMENT> Expression() 
+	{
+		jjtThis.value = t.image;
+	} 
+	#Constant_Assignment(>1)
+}
+
+// 6.
+
+void FunctionList():
+{}
+{
+    [
+		Function() FunctionList()
+	]
+}
+
+// 7.
+
+void Function() #Function: 
+{
+	String id; 
+	String type;
+}
+{
+    type = Type() id = Identifier() 
+	{
+		symboltable.put(id, type, "func", scope); 
+		scope = id;
+	} 
+	<LPAREN> Parameter_List() <RPAREN> 
+	<LBRACE>
+    Decl_List()
+    Statement_Block()
+    <RETURN> <LPAREN> [Expression()] <RPAREN> <SEMICOLON> #Function_Return(>1)
+    <RBRACE>
+}
+
+// 8.
+
+String Type() #Type:
+{
+	Token t;
+}
+{
+	( 
+		t = <INTEGER> 
+	| 	
+		t = <BOOLEAN>
+	|
+		t = <VOID>
+	)
+	{ 
+		jjtThis.value = t.image; 
+		return t.image; 
+	}
+}
+
+// 9A.
+
+void Parameter_List() #Parameter_List:	
+{}
+{
+		Nemp_Parameter_List() 
+		Nemp_Parameter_List_Prime()
+	| 
+		{}
+}
+
+// 9B.
+
+void Nemp_Parameter_List() #Nemp_Parameter_List: 
+{
+	String id; 
+	String type;
+}
+{
+    id = Identifier() <COLON> type = Type() 
+	{ 
+		symboltable.put(id, type, "function_parameter", scope); 
+	}
+}
+
+// 9C.
+
+void Nemp_Parameter_List_Prime():
+{}
+{
+    [<COMMA> Nemp_Parameter_List()]
+}
+
+// 10.
+
+void Main() #Main:
+{
+	Token t;
+}
+{
+    {
+		scope = "main";
+	} 
+	t = <MAIN> 
+	<LBRACE> 
+	Decl_List() 
+	Statement_Block() 
+	<RBRACE>
+}
+
+// 11.
+
+void Statement_Block():
+{}
+{
+		Statement() 
+		Statement_Block()
+	| 
+		{}
+}
+
+// 12.
+
+void Statement(): 
+{
+	Token t;
+}
+{
+		(
+			Identifier() 
+			(
+					(
+						t = <ASSIGNMENT> Expression() <SEMICOLON> 
+						{
+							jjtThis.value = t.image;
+						}
+					) 
+				| 
+					(
+						<LPAREN> Argument_List() <RPAREN> <SEMICOLON> 
+						{
+							jjtThis.value = "procedure_call";
+						}
+					)	
+			)
+		) 
+		#Assignment(2)
+	| 
+		(
+			<LBRACE> Statement_Block() <LBRACE>
+		)
+	| 
+		(
+			t = <IF> Condition() 
+			<LBRACE> Statement_Block() <RBRACE> 
+			<ELSE> 
+			<LBRACE> 
+			Statement_Block() 
+			<RBRACE> 
+			{
+				jjtThis.value = t.image;
+			}
+		) 
+		#Statement
+	| 
+		(
+			t = <WHILE> Condition() 
+			<LBRACE> 
+			Statement_Block() 
+			<RBRACE> 
+			{
+				jjtThis.value = t.image;
+			}
+		) 
+		#Statement
+	| 
+		(
+			<NOP> <SEMICOLON>
+		)
+}
+
+// 13.
+
+void Expression(): 
+{}
+{
+		(
+			Fragment() Binary_Arithmetic_Operator()
+		)
+	| 
+		(
+			<LPAREN> 
+			Expression() 
+			<RPAREN> 
+			Binary_Arithmetic_Operator()
+		)
+}
+
+// 14.
+
+void Binary_Arithmetic_Operator() : 
+{
+	Token t;
+}
+{
+		t = <ADD> Expression() 
+		{
+			jjtThis.value = t.image;
+		}
+		#Addition(2)
+	| 
+		t = <SUB> Expression() 
+		{
+			jjtThis.value = t.image;
+		} 
+		#Subtraction(2)
+	| 	
+		{}
+}
+
+// 15A.
+
+void Fragment():
+{}
+{
+		(
+			Identifier() 
+			[
+				<LPAREN> 
+				Argument_List() 
+				<RPAREN>
+			]
+		)
+	| 
+		(
+			<SUB> Identifier()
+		)
+	| 
+		Number()
+	| 
+		Boolean()
+}
+
+// 15B.
+
+void Number() #Number:
+{
+	Token t;
+}
+{
+    t = <NUMBER> 
+	{
+		jjtThis.value = t.image;
+	}
+}
+
+// 15C.
+
+void Boolean() #Boolean:
+{
+	Token t;
+}
+{
+    (
+			t = <TRUE> 
+		| 
+			t = <FALSE>
+	) 
+	{
+		jjtThis.value = t.image;
+	}
+}
+
+// 16A.
+
+void Condition(): 
+{}
+{
+		(
+			<NEG> Condition() ConditionPrime()
+		)
+	| 
+		LOOKAHEAD(3) 
+		(
+						<LPAREN> Condition() <RPAREN> 
+						ConditionPrime()) //TRY TO REFACTOR BEFORE SUBMISSION
+	| 
+		(
+			Expression() 
+			CompOperator() 
+			ConditionPrime()
+		)
+}
+
+// 16B.
+
+void ConditionPrime():
+{
+	Token t;
+}
+{
+		t = <BOOL_OR> Condition() 
+		{
+			jjtThis.value = t.image;
+		} 
+		#OrOp(2)
+	| 
+		t = <BOOL_AND> Condition() 
+		{
+			jjtThis.value = t.image;
+		} 
+		#AndOp(2) 
+	| 
+		{}
+}
+
+// 17.
+
+void CompOperator():
+{
+	Token t;
+}
+{
+		t = <BOOL_EQUALS> Expression() 
+		{
+			jjtThis.value = t.image;
+		} 
+		#EqualOperator(2)
+	| 
+		t = <BOOL_NOT_EQUALS> Expression() 
+		{
+			jjtThis.value = t.image;
+		} 
+		#NotEqualOperator(2)
+	| 
+		t = <BOOL_LESS> Expression() 
+		{
+			jjtThis.value = t.image;
+		} 
+		#LessOperator(2)
+	| 
+		t = <BOOL_LESS_EQUALS> Expression() 
+		{
+			jjtThis.value = t.image;
+		} 
+		#LessEqualOperator(2)
+	| 
+		t = <BOOL_GREATER> Expression() 
+		{
+			jjtThis.value = t.image;
+		} 
+		#GreaterOperator(2)
+	| 
+		t = <BOOL_GREATER_EQUALS> Expression() 
+		{
+			jjtThis.value = t.image;
+		} 
+		#GreaterEqualOperator(2)
+}
+
+// 18.
+
+void Argument_List():
+{}
+{
+    [
+		Nemp_Argument_List()
+	]
+}
+
+// 19.
+
+void Nemp_Argument_List():
+{}
+{
+    Identifier() 
+	[
+		<COMMA> Nemp_Argument_List()
+	] 
+	#Argument_List(>1)
+}
+
+/**********************************************/

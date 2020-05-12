@@ -1,0 +1,511 @@
+//******************************************
+// 
+/** FILE METADATA */
+// 
+// File: 		MyCCParser.jjt
+//
+// Author: 		NIGEL GUVEN 
+//
+// Description: Grammar file for CCAL Language
+//
+// Date: 		12/12/2019
+//
+// Due Date: 	16/12/2019
+//
+//******************************************
+
+/** JAVACC OPTIONS */
+
+options
+{
+	//JavaCC Options
+	DEBUG_PARSER = true;
+	OUTPUT_DIRECTORY = ".";
+	
+	//JJTree Options
+	MULTI = true;
+	VISITOR = true;
+    NODE_DEFAULT_VOID = true;
+}
+
+//******************************************
+
+/** JAVACC PARSER CLASS */
+
+PARSER_BEGIN(MyCCParser)
+
+import java.io.*;
+import java.util.*;
+
+public class MyCCParser
+{
+	public static SymbolTable MySymbolTable = new SymbolTable();
+	public static String scope = "global";
+	
+	public static void main(String [] args)
+	{
+		MyCCParser parser;
+		
+		if(args.length == 0)
+		{
+			parser = new MyCCParser(System.in);
+		}
+		else if (args.length == 1)
+		{
+			try
+			{
+				parser = new MyCCParser(new java.io.FileInputStream(args[0]));
+			}
+			catch (java.io.FileNotFoundException e)
+			{
+				System.out.println("Parser: File not found");
+				return;
+			}
+		}
+		else
+		{
+			return;
+		}
+		try 
+		{
+			
+			System.out.println("AST_BEGIN");
+			SimpleNode root = parser.Program();
+			root.dump("");
+			System.out.println("AST_END");
+			System.out.println("PARSED SUCCESSFULLY!");
+			
+			System.out.println("******************************");
+
+            //SemanticCheckVisitor scv = new SemanticCheckVisitor();
+            //root.jjtAccept(scv, null);
+		} 
+		catch (ParseException p_error) 
+		{
+			System.out.println("Encountered errors during parse: ");
+			System.out.println(p_error.getMessage());	
+		}
+		catch (NullPointerException n_error)
+		{
+			System.out.println("Encountered errors during parse: ");
+			System.out.println(n_error.getMessage());	
+		}
+	
+	}
+}
+
+PARSER_END(MyCCParser)
+
+//******************************************
+
+/** LEXICAL MANAGER */
+
+/** Variables and Methods used by the Token Manager */
+
+TOKEN_MGR_DECLS:
+{
+	static int nestedCounter = 0;
+}
+
+/** Whitespace, Control Characters */
+
+SKIP:   
+{
+		" "
+	| 	"\t" 
+	| 	"\n"
+	| 	"\r"
+	| 	"\f"
+}
+
+/** Comments, Single, Multi or Nested */
+
+SKIP:
+{
+		"/*" { nestedCounter++; }:COMMENT_NEST
+	| 
+		"//":SINGLE_COMMENT
+}
+
+<COMMENT_NEST> 
+SKIP:
+{
+		"/*" 
+		{ 
+			nestedCounter++; 
+		} 
+	| 
+		"*/" 
+		{ 
+			nestedCounter--;
+			if (nestedCounter == 0)
+				SwitchTo(DEFAULT);
+		}
+	| 
+		<~[]>
+}
+
+<SINGLE_COMMENT> 
+SKIP:
+{
+		<"\n" | "\r" | "\r\n" >:DEFAULT
+	| 
+		<~[]>
+}
+
+/** Reserved Words */
+
+TOKEN [IGNORE_CASE]:
+{
+		< VAR: "var" >
+	|	< CONST: "const" >
+	|	< RETURN: "return" >
+	|	< INTEGER: "integer" >
+	|	< BOOLEAN: "boolean" >
+	|	< VOID: "void" >
+	|	< MAIN: "main" >
+	|	< IF: "if" >
+	|	< ELSE: "else" >
+	|	< TRUE: "true" >
+	|	< FALSE: "false" >
+	|	< WHILE: "while" > 
+	|	< NOP: "skip" >
+}
+
+/** Literals */
+
+TOKEN:
+{
+		< NUMBER: 	("0" |("-")? ["1"-"9"] (["0"-"9"])*) >
+	|	
+		<#LETTER: ["a"-"z"] | ["A"-"Z"]>
+	|
+		< IDENTIFIER: <LETTER>(<LETTER> | <NUMBER> | "_")* >
+}
+
+/** Separators */
+
+TOKEN:
+{
+		< COMMA: ",">
+	|	< SEMICOLON: ";" >
+	|	< COLON: ":" >
+	|	< ASSIGNMENT: "=" >
+	|	< LBRACE: "{" >
+	|	< RBRACE: "}" >
+	|	< LPAREN: "(">
+	|	< RPAREN: ")">
+}	
+
+/** Arithmetic and Boolean Logic */
+
+TOKEN:
+{
+		< ADD: "+">
+	|	< SUB: "-" >
+	|	< NEG: "~" >
+	|	< BOOL_OR: "||">
+	|	< BOOL_AND: "&&" >
+	|	< BOOL_EQUALS: "==" >
+	|	< BOOL_NOT_EQUALS: "!=" >
+	|	< BOOL_LESS: "<" >
+	|	< BOOL_LESS_EQUALS: "<=" >
+	|	< BOOL_GREATER: ">" >
+	|	< BOOL_GREATER_EQUALS: ">=" >
+}
+
+/** Set of All Unrecognised Tokens */
+
+TOKEN : 
+{
+    < UNICODE_CHAR : ~[] >
+}
+
+//******************************************
+
+/** CCAL GRAMMAR PRODUCTIONS */
+
+// 1.
+
+SimpleNode Program():
+{}
+{
+	Decl_List() Function_List() Main() <EOF>
+}
+
+// 2.
+
+void Decl_List():
+{}
+{
+		Decl() <SEMICOLON>  Decl_List() 
+	| 
+		{} 
+}
+
+// 3.
+
+void Decl():
+{}
+{
+		Var_Decl() 
+	| 
+		Const_Decl()
+}
+
+// 4.
+
+void Var_Decl():
+{}
+{
+	<VAR> <IDENTIFIER> <COLON> Type()
+}
+
+// 5.
+
+void Const_Decl():
+{}
+{
+	<CONST> <IDENTIFIER> <COLON> Type() <ASSIGNMENT> Expression()
+}
+
+// 6.
+
+void Function_List():
+{}
+{
+		
+		Function() Function_List()
+	| 
+		{}
+	
+}
+
+// 7.
+
+void Function():
+{}
+{
+	Type() <IDENTIFIER> <LPAREN> Parameter_List() <RPAREN>
+	<LBRACE>
+	Decl_List()
+	Statement_Block()
+	<RETURN> <LPAREN> 
+	(
+		Expression() 
+	| 
+		{}
+	) 
+	<RPAREN> <SEMICOLON>
+	<RBRACE>
+}
+
+// 8.
+
+void Type():
+{}
+{
+	(
+		<INTEGER> 
+	| 	
+		<BOOLEAN> 
+	| 
+		<VOID>
+	)
+}
+
+// 9A.
+
+void Parameter_List():
+{}
+{
+		Nemp_Parameter_List() [<COMMA> Nemp_Parameter_List()]	 
+	| 
+		{}
+}
+
+// 9B.
+
+void Nemp_Parameter_List():
+{}
+{	
+	<IDENTIFIER> <COLON> Type() 
+}
+
+// 10.
+
+void Main():
+{}
+{
+	<MAIN> 
+	<LBRACE>
+	Decl_List()
+	Statement_Block()
+	<RBRACE>
+}
+
+// 11.
+
+void Statement_Block():
+{}
+{
+		 Statement() 
+		 Statement_Block() 
+	| 
+		{}
+}
+
+// 12.
+
+void Statement():
+{}
+{
+	(
+		(<IDENTIFIER> (LOOKAHEAD(2)(<ASSIGNMENT> Expression() <SEMICOLON>) 
+	| 	
+		(<ASSIGNMENT> <SUB><IDENTIFIER>)))
+	|
+		(<LPAREN> Arg_List() <RPAREN> <SEMICOLON>)
+	)
+		
+	|
+		(<LBRACE> Statement_Block() <RBRACE>)
+	|
+		(<IF> Condition() 
+		<LBRACE> 
+			Statement_Block() 
+		<RBRACE>		
+		<ELSE> 
+		<LBRACE>
+			Statement_Block()
+		<RBRACE>)
+	|
+		(<WHILE> Condition()
+		<LBRACE>
+			Statement_Block()
+		<RBRACE>)
+	|
+		(<NOP> <SEMICOLON>)
+}
+
+// 13.
+
+void Expression():
+{}
+{
+		LOOKAHEAD(3) (Fragment() Binary_Arith_Op())
+	|
+		(<LPAREN> Expression() <RPAREN> Binary_Arith_Op())
+	|
+		(Fragment() <ASSIGNMENT> Fragment() <SEMICOLON> [Expression()])
+}
+
+//14. 
+
+void Binary_Arith_Op():
+{}
+{
+		<ADD> Expression() 
+	| 
+		<SUB> Expression() 
+	| 
+		<ASSIGNMENT><NUMBER> 
+	|
+		{}
+}
+
+// 15.
+
+void Fragment():
+{}
+{
+		<IDENTIFIER> [<LPAREN> Arg_List() <RPAREN>]
+	|
+		<SUB><IDENTIFIER>
+	|
+		<NUMBER> 
+	|
+		<TRUE>
+	|
+		<FALSE>
+}
+
+// 16A.
+
+void Condition():
+{}
+{
+		
+		(<NEG> Condition() Condition_Prime())
+	|
+		LOOKAHEAD(3) (<LPAREN> Condition() <RPAREN> Condition_Prime())
+	|
+		(Expression() Comp_Op() Expression() Condition_Prime())
+	
+}
+
+// 16B.
+
+void Condition_Prime():
+{}
+{
+		Conditional_Or_Expression()
+	|
+		Conditional_And_Expression()
+	|
+		{}
+}
+
+// 16C.
+
+void Conditional_Or_Expression():
+{}
+{
+	<BOOL_OR> Condition()
+}
+
+// 16D.
+
+void Conditional_And_Expression():
+{}
+{
+	<BOOL_AND> Condition()
+}
+
+// 17.
+
+void Comp_Op():
+{}
+{
+		<BOOL_EQUALS> 
+	|
+		<BOOL_NOT_EQUALS> 
+	|
+		<BOOL_LESS> 
+	|
+		<BOOL_LESS_EQUALS> 
+	|
+		<BOOL_GREATER> 
+	|
+		<BOOL_GREATER_EQUALS>
+}
+
+// 18.
+
+void Arg_List():
+{}
+{
+		Nemp_Arg_List() 
+	| 
+		{}
+}
+
+// 19.
+
+void Nemp_Arg_List():
+{}
+{ 
+	<IDENTIFIER> [<COMMA> Nemp_Arg_List()]
+}
+
+/**********************************************/
