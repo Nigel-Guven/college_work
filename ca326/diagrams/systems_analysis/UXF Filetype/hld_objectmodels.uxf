@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>130</y>
+      <w>250</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>Class: FilmListAdapter
+
+--
+Contains
+-Context mContext -&gt; CinemaActivity
+-Resource mResource -&gt; ListView
+--
+Responsibilities
+
+-- Displays a FilmIdentity object
+
+-- Extends from default 
+   listview model
+   
+-- Is dynamic to capture an 
+   ambiguous set of data</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>430</y>
+      <w>440</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Object: Cinema
+
+--
+Contains
+-String name -&gt; name of cinema
+-String url -&gt; cinema url contains film times - JSoup.connect()
+-String [] list_of_films -&gt; list of films in a single cinema
+-Location cinema_location -&gt; the latitude and longitude of a cinema
+-Mapmarker mMapMarker -&gt; Google Maps marker object of location
+
+--
+Responsibilities
+
+-- Film object contains all data specified for a single film
+
+-- There are 109 cinemas in Ireland/N.Ireland</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>150</y>
+      <w>340</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Class: FilmIdentity
+
+--
+Contains
+-String name -&gt; Name of Film
+-String top_info -&gt; Genre
+-String bottom_info -&gt; IMDB Score,MPAA,Runtime
+--
+Responsibilities
+
+-- Set a Film Object for addition to listview
+
+-- Act as an object for each item in FilmListAdapter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>410</y>
+      <w>390</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>Object: Film
+
+--
+Contains
+-String name -&gt; Name of Film
+-String release_date -&gt; date of original release
+-String image_url -&gt; image url of film - Picasso callback()
+-String [] film_times -&gt; set of film times
+-String [] genres - &gt; array of film genres
+-String imdb_rating -&gt; a film rating out of 10
+-String age_rating -&gt; MPAA standardised age rating system
+-String runtime -&gt; film length in minutes
+-String director -&gt; director of films
+-String [] cast -&gt; array of names of cast members
+-String description -&gt; long string depicting film synopsis
+--
+Responsibilities
+
+-- Film object contains all data specified for a single film
+
+-- Films are attached to a cinema</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Innovative Cinema Listings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="menu_button1">Cinema Map</string>
+    <string name="menu_button2">Help</string>
+    <string name="temporary">TODOStub</string>
+    <string name="web_icon">Web_Icon</string>
+    <string name="youtube_logo">Youtube</string>
+    <string name="gitlab_logo">Gitlab</string>
+    <string name="mail_logo">Gmail</string>
+    <string name="tell_time">  There are no more available times for this film today. Please try again tomorrow.</string>
+    <string name="mail_nigel">Mail: nigel.guven2@mail.dcu.ie</string>
+    <string name="mail_shaun">Mail: shaun.carey26@mail.dcu.ie</string>
+    <string name="title_activity_cinema">CinemaActivity</string>
+    <string name="title_activity_help">Settings</string>
+    <string name="link_to_blog">Visit the <a href="http://student.computing.dcu.ie/~guvenn2/thirdyearblog/post.html">Blog</a></string>
+    <string name="link_to_tutorial">View the <a href="https://www.youtube.com/watch?v=dmPhsrkUXOc&fbclid=IwAR2-Y5cMzYTf-Cti_GtpIib3_L__IWxlio1CRDL5M_UyS-e_IxRojYO9Its">Tutorial Video</a></string>
+    <string name="link_to_gitlab">Explore the <a href="https://gitlab.computing.dcu.ie/careys26/2019-ca326-innovative-cinema-listings">Gitlab Repository</a></string>
+    <string name="settings_header">Information</string>
+    <string name="film_times"><b> <u>Film Times:</u></b></string>
+    <string name="buttonDirection">Set Route</string>
+    <string name="film_dor"><b>  Release Date: </b></string>
+    <string name="film_genre"><b><u>Genre</u></b></string>
+    <string name="film_imdb"><b>  IMDB Rating: </b></string>
+    <string name="film_mpaa"><b>  MPAA Age Rating: </b></string>
+    <string name="film_runtime"><b>  Runtime (minutes): </b></string>
+    <string name="director"><b>  Director: </b></string>
+    <string name="actors"><b>  Cast: </b></string>
+    <string name="description"><b>  Description: </b></string>
+    <string name="image_description_film">This is the image poster for the film</string>
+    <string name="title_activity_directions">Map</string>
+
+
+</resources>

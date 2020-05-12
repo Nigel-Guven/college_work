@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:weightSum="5" android:orientation="horizontal" android:id="@+id/ll1">
+
+
+    </LinearLayout>
+
+    <fragment android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/map" tools:context="com.nbstutorials.googelemapstutorial.MapsActivity" android:layout_below="@+id/ll1" android:name="com.google.android.gms.maps.SupportMapFragment" xmlns:tools="http://schemas.android.com/tools"/>
+
+    <Button
+        android:id="@+id/btSatellite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/zcZoom"
+        android:layout_alignParentRight="true"
+        android:text="Sat" />
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btSatellite"
+        android:layout_above="@+id/zcZoom"
+        android:text="Show"
+        />
+
+    <ZoomControls android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/zcZoom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

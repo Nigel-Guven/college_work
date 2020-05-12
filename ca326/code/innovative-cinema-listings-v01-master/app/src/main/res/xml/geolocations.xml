@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<geolocations>
+<cinema_record>
+<cinema_name>"IMC Ballymena"</cinema_name>
+<cinema_longitude> 54.861564</cinema_longitude>
+<cinema_latitude> -6.2675810000001</cinema_latitude>
+<cinema_url> https://www.rte.ie/entertainment/listings/cinema/venue-imc-ballymena</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Movie House City Side Belfast"</cinema_name>
+<cinema_longitude> 54.6084711	</cinema_longitude>
+<cinema_latitude> -5.9269419</cinema_latitude>
+<cinema_url> https://www.rte.ie/entertainment/listings/cinema/venue-movie-house-city-side-belfast</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Movie House Dublin Road"</cinema_name>
+<cinema_longitude> 54.59222</cinema_longitude>
+<cinema_latitude> -5.931523</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-movie-house-dublin-road</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Movie House Glengormley"</cinema_name>
+<cinema_longitude> 54.668939 </cinema_longitude>
+<cinema_latitude> -5.957043</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-movie-house-glengormley</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Belfast"</cinema_name>
+<cinema_longitude> 54.598515 </cinema_longitude>
+<cinema_latitude> -5.92598590000</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-belfast</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Odyssey Cinema Belfast"</cinema_name>
+<cinema_longitude> 54.6038086</cinema_longitude>
+<cinema_latitude> -5.9156209000</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odyssey-cinema-belfast</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Antrim"</cinema_name>
+<cinema_longitude> 54.731948</cinema_longitude>
+<cinema_latitude> -6.229731000000015</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-antrim</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Belfast Kennedy Centre"</cinema_name>
+<cinema_longitude> 54.5887936</cinema_longitude>
+<cinema_latitude> -5.82334179999998</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-belfast-kennedy-centre</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Carrickfergus"</cinema_name>
+<cinema_longitude> 54.7121941</cinema_longitude>
+<cinema_latitude> -5.812584499999957</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-carrickfergus</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Dundonald"</cinema_name>
+<cinema_longitude> 54.5887936</cinema_longitude>
+<cinema_latitude> -5.823341799</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-dundonald</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Larne"</cinema_name>
+<cinema_longitude> 54.8471802 </cinema_longitude>
+<cinema_latitude> -5.810134699999</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-larne</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Lisburn"</cinema_name>
+<cinema_longitude> 54.507506</cinema_longitude>
+<cinema_latitude> -6.0516609999</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-lisburn</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Queens Film Theatre"</cinema_name>
+<cinema_longitude> 54.585444</cinema_longitude>
+<cinema_latitude> -5.933951200000</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-queens-film-theatre</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Strand Arts Centre Belfast"</cinema_name>
+<cinema_longitude> 54.60058169999999</cinema_longitude>
+<cinema_latitude> -5.879735699999969</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-strand-arts-centre-belfast</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Armagh"</cinema_name>
+<cinema_longitude>54.34810270000001 </cinema_longitude>
+<cinema_latitude> -6.653967100000045</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-armagh</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Craigavon"</cinema_name>
+<cinema_longitude>54.450898 </cinema_longitude>
+<cinema_latitude> -6.397582899999975</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-craigavon</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Carlow"</cinema_name>
+<cinema_longitude> 52.8335284</cinema_longitude>
+<cinema_latitude> -6.924232500000016</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-carlow</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Carlow"</cinema_name>
+<cinema_longitude>52.8350146 </cinema_longitude>
+<cinema_latitude> -6.927127599999949</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-carlow</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Cavan Town"</cinema_name>
+<cinema_longitude> 53.98972299999999</cinema_longitude>
+<cinema_latitude> -7.358783000000017</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-cavan-town</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Eclipse Cinemas Lifford/Strabane"</cinema_name>
+<cinema_longitude> 54.8342026</cinema_longitude>
+<cinema_latitude> -7.476694</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-eclipse-cinemas-liffordstrabane</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Empire Movieplex"</cinema_name>
+<cinema_longitude> 52.8438991</cinema_longitude>
+<cinema_latitude> -8.984930500000019</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-empire-movieplex</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Bantry Cinemax"</cinema_name>
+<cinema_longitude>51.6801572 </cinema_longitude>
+<cinema_latitude> -9.455944400000021</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-bantry-cinemax</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Cinema World Douglas"</cinema_name>
+<cinema_longitude>51.87831079999999 </cinema_longitude>
+<cinema_latitude> -8.435115499999938</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-cinema-world-douglas</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Gate Multiplex Cork"</cinema_name>
+<cinema_longitude>51.90093599999999 </cinema_longitude>
+<cinema_latitude> -8.479589000000033</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-gate-multiplex-cork</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Gate Multiplex Mallow"</cinema_name>
+<cinema_longitude> 52.1377481</cinema_longitude>
+<cinema_latitude> -8.640698799999996</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-gate-multiplex-mallow</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Gate Multiplex Midleton"</cinema_name>
+<cinema_longitude>51.91724869999999 </cinema_longitude>
+<cinema_latitude> -8.179496699999959</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-gate-multiplex-midleton</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Cork Mahon Point Shopping Centre"</cinema_name>
+<cinema_longitude>51.8858814 </cinema_longitude>
+<cinema_latitude> -8.394239500000026</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-cork-mahon-point-shopping-centre</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Park Cinema Clonakilty"</cinema_name>
+<cinema_longitude> 51.6168054</cinema_longitude>
+<cinema_latitude> -8.894777400000066</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-park-cinema-clonakilty</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Regal Cinema"</cinema_name>
+<cinema_longitude> 51.950819</cinema_longitude>
+<cinema_latitude> 7.845046</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-regal-cinema</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"The Reel Picture Ballincollig"</cinema_name>
+<cinema_longitude> 51.88703460000001</cinema_longitude>
+<cinema_latitude> -8.588421899999958</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-the-reel-picture-ballincollig</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"The Reel Picture Blackpool"</cinema_name>
+<cinema_longitude>51.91698830000001 </cinema_longitude>
+<cinema_latitude> -8.47284579999996</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-the-reel-picture-blackpool</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Triskel Christchurch Arts Centre"</cinema_name>
+<cinema_longitude> 51.897486</cinema_longitude>
+<cinema_latitude> -8.475955</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-triskel-christchurch-arts-centre</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Brunswick Moviebowl"</cinema_name>
+<cinema_longitude> 55.013054</cinema_longitude>
+<cinema_latitude> -7.320961</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-brunswick-moviebowl</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Movie House Coleraine"</cinema_name>
+<cinema_longitude> 55.119561</cinema_longitude>
+<cinema_latitude> -6.678014899999994</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-movie-house-coleraine</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Movie House Maghera"</cinema_name>
+<cinema_longitude> 54.844043</cinema_longitude>
+<cinema_latitude> -6.673185999999987</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-movie-house-maghera</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Derry Quayside Shopping Centre"</cinema_name>
+<cinema_longitude> 55.0001207</cinema_longitude>
+<cinema_latitude> -7.321652800000038</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-derry-quayside-shopping-centre</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Century Cinemas Letterkenny"</cinema_name>
+<cinema_longitude> 54.9443347</cinema_longitude>
+<cinema_latitude> -7.735903699999994</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-century-cinemas-letterkenny</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Eclipse Cinemas Bundoran"</cinema_name>
+<cinema_longitude>54.47763089999999 </cinema_longitude>
+<cinema_latitude> -8.274164299999939</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-century-cinemas-bundoran</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Banbridge"</cinema_name>
+<cinema_longitude>54.3503295 </cinema_longitude>
+<cinema_latitude> -6.2713103999999475</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-banbridge</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Newtownards"</cinema_name>
+<cinema_longitude> 54.59083949999999</cinema_longitude>
+<cinema_latitude> -5.710079700000051</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-newtownards</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Banbridge"</cinema_name>
+<cinema_longitude> 54.3310462</cinema_longitude>
+<cinema_latitude> -6.275984900000026</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-banbridge</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Bangor"</cinema_name>
+<cinema_longitude>54.65478450000001 </cinema_longitude>
+<cinema_latitude> -5.663559200000009</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-bangor</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Downpatrick"</cinema_name>
+<cinema_longitude>54.3234118 </cinema_longitude>
+<cinema_latitude> -5.714059099999986</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-downpatrick</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Newry"</cinema_name>
+<cinema_longitude> 54.16867500000001</cinema_longitude>
+<cinema_latitude> -6.340147000000002</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-newry</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Cineworld Dublin"</cinema_name>
+<cinema_longitude>53.3503541 </cinema_longitude>
+<cinema_latitude> -6.267897800000014</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-cineworld-dublin</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IFI Irish Film Institute"</cinema_name>
+<cinema_longitude>53.344646 </cinema_longitude>
+<cinema_latitude>-6.264867900000013</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-ifi-irish-film-institute</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Dun Laoghaoire"</cinema_name>
+<cinema_longitude>53.2934093 </cinema_longitude>
+<cinema_latitude>-6.13971319999996</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-dun-laoghaire </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Santry"</cinema_name>
+<cinema_longitude>53.39332460000001 </cinema_longitude>
+<cinema_latitude>-6.250413299999991</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-santry </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Savoy Cinema"</cinema_name>
+<cinema_longitude> 53.351441</cinema_longitude>
+<cinema_latitude> -6.260238</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-savoy-cinema</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Tallaght"</cinema_name>
+<cinema_longitude>53.2869531 </cinema_longitude>
+<cinema_latitude>-6.372666900000013</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-tallaght </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Light House Cinema Dublin"</cinema_name>
+<cinema_longitude>53.3487928 </cinema_longitude>
+<cinema_latitude>-6.279071400000021</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-light-house-cinema-dublin</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Movies at Dundrum"</cinema_name>
+<cinema_longitude>53.28807570000001 </cinema_longitude>
+<cinema_latitude>-6.242228800000021</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-movies-at-dundrum </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Movies at Swords"</cinema_name>
+<cinema_longitude>53.45506 </cinema_longitude>
+<cinema_latitude>-6.219172999999955</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-movies-at-swords </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Blanchardstown"</cinema_name>
+<cinema_longitude>53.39247830000001 </cinema_longitude>
+<cinema_latitude>-6.391169300000001</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-blanchardstown</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Charlestown"</cinema_name>
+<cinema_longitude>53.4043573 </cinema_longitude>
+<cinema_latitude>-6.3042242000000215</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-charlestown</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Coolock"</cinema_name>
+<cinema_longitude>53.3912116 </cinema_longitude>
+<cinema_latitude>-6.19288830000005</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-coolock </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Point Square"</cinema_name>
+<cinema_longitude>53.348489 </cinema_longitude>
+<cinema_latitude> -6.227728999999954</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-point-square</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Stillorgan"</cinema_name>
+<cinema_longitude>53.2878885 </cinema_longitude>
+<cinema_latitude>-6.1982803999999305</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-stillorgan </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Balbriggan"</cinema_name>
+<cinema_longitude>53.61031109999999 </cinema_longitude>
+<cinema_latitude>-6.183148899999992</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-balbriggan</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Rathmines"</cinema_name>
+<cinema_longitude>53.3237813 </cinema_longitude>
+<cinema_latitude>-6.2652137999999695</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-rathmines</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"The Stella Theatre Ranelagh"</cinema_name>
+<cinema_longitude>53.324195</cinema_longitude>
+<cinema_latitude> -6.247637</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-the-stella-theatre-ranelagh </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"The Stella Theatre Rathmines"</cinema_name>
+<cinema_longitude>53.32237379999999 </cinema_longitude>
+<cinema_latitude>-6.265858900000012</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-the-stella-theatre-rathmines </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Vue Liffey Valley"</cinema_name>
+<cinema_longitude>53.352457</cinema_longitude>
+<cinema_latitude> -6.393136</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-vue-liffey-valley  </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Enniskillen"</cinema_name>
+<cinema_longitude>54.3519675 </cinema_longitude>
+<cinema_latitude>-7.634803099999999</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-enniskillen</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Eye Cinema Galway"</cinema_name>
+<cinema_longitude>53.28120800000001 </cinema_longitude>
+<cinema_latitude>-9.03192260000003</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-eye-cinema-galway </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Galway"</cinema_name>
+<cinema_longitude>53.2796514 </cinema_longitude>
+<cinema_latitude>-9.050758900000005</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-galway</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Oranmore"</cinema_name>
+<cinema_longitude>53.2784222 </cinema_longitude>
+<cinema_latitude>-8.927789299999972</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-oranmore </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Palas"</cinema_name>
+<cinema_longitude>53.270047</cinema_longitude>
+<cinema_latitude> -9.052554</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-pls</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Cinema Killarney"</cinema_name>
+<cinema_longitude>52.057696 </cinema_longitude>
+<cinema_latitude>-9.506220600000006</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-cinema-killarney  </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Listowel Classic Movieplex"</cinema_name>
+<cinema_longitude>52.449761</cinema_longitude>
+<cinema_latitude> -9.486104</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-listowel-classic-movieplex  </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Tralee"</cinema_name>
+<cinema_longitude>52.26351039999999 </cinema_longitude>
+<cinema_latitude>-9.708125099999961</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-tralee </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Phoenix Cinema Dingle"</cinema_name>
+<cinema_longitude>52.139892</cinema_longitude>
+<cinema_latitude> -10.269410</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-phoenix-cinema-dingle </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Naas"</cinema_name>
+<cinema_longitude>53.2323692</cinema_longitude>
+<cinema_latitude> -6.63927000000001</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-naas</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Newbridge"</cinema_name>
+<cinema_longitude>53.1774866 </cinema_longitude>
+<cinema_latitude> -6.797646999999984</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-newbridge </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Kilkenny"</cinema_name>
+<cinema_longitude>52.6497973 </cinema_longitude>
+<cinema_latitude>-7.256633299999976</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-kilkenny </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Portlaoise"</cinema_name>
+<cinema_longitude>53.03509589999999 </cinema_longitude>
+<cinema_latitude>-7.300447599999984</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-portlaoise </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Carrick Cineplex"</cinema_name>
+<cinema_longitude>53.9428697 </cinema_longitude>
+<cinema_latitude> -8.104422900000031</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-carrick-cineplex </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Limerick"</cinema_name>
+<cinema_longitude>52.6649258 </cinema_longitude>
+<cinema_latitude>-8.552551300000005</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-limerick</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Limerick Crescent Shopping Centre"</cinema_name>
+<cinema_longitude>52.64015200000001 </cinema_longitude>
+<cinema_latitude> -8.64411999999993</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-limerick-crescent-shopping-centre</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Vue Limerick"</cinema_name>
+<cinema_longitude>52.6681069 </cinema_longitude>
+<cinema_latitude>-8.659812200000033</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-vue-limerick </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Longford"</cinema_name>
+<cinema_longitude>53.73026040000001 </cinema_longitude>
+<cinema_latitude>-7.802051399999982</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-longford </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Dundalk"</cinema_name>
+<cinema_longitude>54.0076585 </cinema_longitude>
+<cinema_latitude>-6.4037739999999985</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-dundalk </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Dundalk"</cinema_name>
+<cinema_longitude>53.9917327 </cinema_longitude>
+<cinema_latitude>-6.377359599999977</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-dundalk </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"The Arc Cinema Drogheda"</cinema_name>
+<cinema_longitude>53.3843787 </cinema_longitude>
+<cinema_latitude>-6.242089099999999</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-the-arc-cinema-drogheda</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Ballina"</cinema_name>
+<cinema_longitude>54.115904 </cinema_longitude>
+<cinema_latitude>-9.163788000000068</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-ballina</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Mayo Movieworld"</cinema_name>
+<cinema_longitude>53.856665 </cinema_longitude>
+<cinema_latitude>-9.286900999999943</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-mayo-movieworld</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"The W Cinema"</cinema_name>
+<cinema_longitude>53.800297 </cinema_longitude>
+<cinema_latitude>-9.525000999999975</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-the-w-cinema</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Vue Ashbourne"</cinema_name>
+<cinema_longitude>53.5213674 </cinema_longitude>
+<cinema_latitude>-6.414173300000016</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-vue-ashbourne</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Monaghan"</cinema_name>
+<cinema_longitude>54.2424334 </cinema_longitude>
+<cinema_latitude>-7.001164099999983</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-monaghan</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Tullamore"</cinema_name>
+<cinema_longitude>53.274585 </cinema_longitude>
+<cinema_latitude>-7.494434299999966</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-tullamore</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"C and L Plex"</cinema_name>
+<cinema_longitude>53.631992</cinema_longitude>
+<cinema_latitude> -8.179701</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-cl-plex </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Sligo"</cinema_name>
+<cinema_longitude>54.272371 </cinema_longitude>
+<cinema_latitude>-8.47781299999997</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-sligo</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"The Model"</cinema_name>
+<cinema_longitude>54.273025</cinema_longitude>
+<cinema_latitude> -8.467839</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-the-model </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Clonmel"</cinema_name>
+<cinema_longitude>52.35514800000001 </cinema_longitude>
+<cinema_latitude>-7.701640999999995</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-clonmel</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Thurles"</cinema_name>
+<cinema_longitude>52.676111</cinema_longitude>
+<cinema_latitude> -7.810047</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-thurles</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Ormond Cineplex Nenagh"</cinema_name>
+<cinema_longitude>52.8654867 </cinema_longitude>
+<cinema_latitude>-8.196578600000066</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-ormond-cineplex-nenagh</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Tipperary Excel Centre"</cinema_name>
+<cinema_longitude>52.475051</cinema_longitude>
+<cinema_latitude> -8.159528</cinema_latitude>
+<cinema_url> https://www.rte.ie/entertainment/listings/cinema/venue-tipperary-excel-centre</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Omagh"</cinema_name>
+<cinema_longitude>54.6112103 </cinema_longitude>
+<cinema_latitude>-7.330187499999965</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-omagh</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Dungannon"</cinema_name>
+<cinema_longitude>54.51237099999999 </cinema_longitude>
+<cinema_latitude>-6.761641999999938</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-dungannon</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Omagh"</cinema_name>
+<cinema_longitude>54.5963224 </cinema_longitude>
+<cinema_latitude>-7.301115399999958</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-omagh</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"The Ritz Cookstown"</cinema_name>
+<cinema_longitude>54.64668950000001 </cinema_longitude>
+<cinema_latitude>-6.745960299999979</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-the-ritz-cookstown</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"ODEON Waterford"</cinema_name>
+<cinema_longitude>52.2546386 </cinema_longitude>
+<cinema_latitude>-7.110941499999967</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-odeon-waterford</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"SGC Dungarvan"</cinema_name>
+<cinema_longitude>52.091016 </cinema_longitude>
+<cinema_latitude>-7.622323000000051</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-sgc-dungarvan</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Athlone"</cinema_name>
+<cinema_longitude>53.4204714 </cinema_longitude>
+<cinema_latitude>-7.93286379999995</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-athlone</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"IMC Mullingar"</cinema_name>
+<cinema_longitude>53.53283769999999 </cinema_longitude>
+<cinema_latitude>-7.312527799999998</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-imc-mullingar</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Movies @ Gorey"</cinema_name>
+<cinema_longitude>52.671763</cinema_longitude>
+<cinema_latitude> -6.270864</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-movies-a-gorey </cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Wexford"</cinema_name>
+<cinema_longitude>52.31261019999999 </cinema_longitude>
+<cinema_latitude>-6.45608500000003</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-wexford</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"The Arc Cinema Wexford"</cinema_name>
+<cinema_longitude>52.343733</cinema_longitude>
+<cinema_latitude> -6.464715</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-the-arc-cinema-wexford</cinema_url>
+</cinema_record>
+<cinema_record>
+<cinema_name>"Omniplex Arklow"</cinema_name>
+<cinema_longitude>52.79879139999999 </cinema_longitude>
+<cinema_latitude>-6.149025700000038</cinema_latitude>
+<cinema_url>https://www.rte.ie/entertainment/listings/cinema/venue-omniplex-arklow</cinema_url>
+</cinema_record>
+</geolocations>
