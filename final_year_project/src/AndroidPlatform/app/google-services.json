@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "946562865831",
+    "firebase_url": "https://clevercarpooling.firebaseio.com",
+    "project_id": "clevercarpooling",
+    "storage_bucket": "clevercarpooling.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946562865831:android:b01224a82a2425d8361982",
+        "android_client_info": {
+          "package_name": "com.example.carpool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946562865831-qgk99j6um3al0vpsqokul65lh6gvn0i8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carpool",
+            "certificate_hash": "ce2a6cc303f1eb6fca10a63bcd42d309159bc15d"
+          }
+        },
+        {
+          "client_id": "946562865831-enc9edgvpimu74a935mhmp0bd8imr596.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLo904l_rY-tb18ST-Yr2mvIQI9-yL9nc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946562865831-enc9edgvpimu74a935mhmp0bd8imr596.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
