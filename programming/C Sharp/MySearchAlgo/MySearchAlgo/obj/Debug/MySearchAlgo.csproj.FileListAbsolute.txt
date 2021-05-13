@@ -1,0 +1,6 @@
+c:\users\nigel.guven\documents\visual studio 2015\Projects\MySearchAlgo\MySearchAlgo\bin\Debug\MySearchAlgo.exe.config
+c:\users\nigel.guven\documents\visual studio 2015\Projects\MySearchAlgo\MySearchAlgo\obj\Debug\MySearchAlgo.csprojResolveAssemblyReference.cache
+c:\users\nigel.guven\documents\visual studio 2015\Projects\MySearchAlgo\MySearchAlgo\bin\Debug\MySearchAlgo.exe
+c:\users\nigel.guven\documents\visual studio 2015\Projects\MySearchAlgo\MySearchAlgo\bin\Debug\MySearchAlgo.pdb
+c:\users\nigel.guven\documents\visual studio 2015\Projects\MySearchAlgo\MySearchAlgo\obj\Debug\MySearchAlgo.exe
+c:\users\nigel.guven\documents\visual studio 2015\Projects\MySearchAlgo\MySearchAlgo\obj\Debug\MySearchAlgo.pdb

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>450</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Lecturer
+--
+_*Lecturer_ID*_
+LecturerFirstName
+LecturerLastName
+LecturerEmailAddress
+*LecturerCourseID*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>480</y>
+      <w>110</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>User
+--
+_*User_ID*_
+UserPassword</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>190</y>
+      <w>110</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Course
+--
+_*Course_ID*_
+*Dept_ID*
+CourseName
+*TeacherID*
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>190</y>
+      <w>150</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Student
+--
+_*Student_ID*_
+StudentFirstName
+StudentLastName
+StudentEmailAddress
+*StudentMajor*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>260</y>
+      <w>100</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0;10.0;220.0;50.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>230</y>
+      <w>310</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>290.0;10.0;70.0;10.0;70.0;60.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>470</y>
+      <w>320</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;40.0;100.0;40.0;100.0;10.0;300.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>210</y>
+      <w>90</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>20.0;340.0;70.0;340.0;70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

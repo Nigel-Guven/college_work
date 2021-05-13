@@ -1,0 +1,6 @@
+c:\users\nigel.guven\documents\visual studio 2015\Projects\Students\Students\bin\Debug\Students.exe.config
+c:\users\nigel.guven\documents\visual studio 2015\Projects\Students\Students\bin\Debug\Students.exe
+c:\users\nigel.guven\documents\visual studio 2015\Projects\Students\Students\bin\Debug\Students.pdb
+c:\users\nigel.guven\documents\visual studio 2015\Projects\Students\Students\obj\Debug\Students.csprojResolveAssemblyReference.cache
+c:\users\nigel.guven\documents\visual studio 2015\Projects\Students\Students\obj\Debug\Students.exe
+c:\users\nigel.guven\documents\visual studio 2015\Projects\Students\Students\obj\Debug\Students.pdb

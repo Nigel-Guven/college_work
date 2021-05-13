@@ -1,0 +1,6 @@
+C:\Users\Nigel.Guven\Documents\MyC#\MatchBrackets\MatchBrackets\bin\Debug\MatchBrackets.exe.config
+C:\Users\Nigel.Guven\Documents\MyC#\MatchBrackets\MatchBrackets\obj\Debug\MatchBrackets.csprojResolveAssemblyReference.cache
+C:\Users\Nigel.Guven\Documents\MyC#\MatchBrackets\MatchBrackets\bin\Debug\MatchBrackets.exe
+C:\Users\Nigel.Guven\Documents\MyC#\MatchBrackets\MatchBrackets\bin\Debug\MatchBrackets.pdb
+C:\Users\Nigel.Guven\Documents\MyC#\MatchBrackets\MatchBrackets\obj\Debug\MatchBrackets.exe
+C:\Users\Nigel.Guven\Documents\MyC#\MatchBrackets\MatchBrackets\obj\Debug\MatchBrackets.pdb

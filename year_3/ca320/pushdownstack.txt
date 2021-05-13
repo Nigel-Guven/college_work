@@ -1,0 +1,7 @@
+[STATE]		[INPUT]	[TOP OF STACK]		[NEXT STATE]	[VALUE AT TOP OF STACK]	
+S		a		E			F		E
+S		a		E			F		E
+F		a		E			F		E
+F		b		E			F		E
+F		a		a			F		E
+F		b		b			F		E

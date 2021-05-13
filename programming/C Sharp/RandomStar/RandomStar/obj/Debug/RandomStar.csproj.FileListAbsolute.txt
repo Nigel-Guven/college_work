@@ -1,0 +1,6 @@
+C:\Users\Nigel.Guven\Documents\MyC#\RandomStar\RandomStar\bin\Debug\RandomStar.exe.config
+C:\Users\Nigel.Guven\Documents\MyC#\RandomStar\RandomStar\obj\Debug\RandomStar.csprojResolveAssemblyReference.cache
+C:\Users\Nigel.Guven\Documents\MyC#\RandomStar\RandomStar\bin\Debug\RandomStar.exe
+C:\Users\Nigel.Guven\Documents\MyC#\RandomStar\RandomStar\bin\Debug\RandomStar.pdb
+C:\Users\Nigel.Guven\Documents\MyC#\RandomStar\RandomStar\obj\Debug\RandomStar.exe
+C:\Users\Nigel.Guven\Documents\MyC#\RandomStar\RandomStar\obj\Debug\RandomStar.pdb

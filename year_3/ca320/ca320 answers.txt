@@ -1,0 +1,60 @@
+language contains at least two a's
+
+(a|b)*a(a|b)*a(a|b)*
+
+language with one b at the end
+
+(a*ab)|b
+
+language of all strings of a and b
+
+(a|b)*
+
+language of any number of b's followed by one a followed by any number of a or b
+
+b*a(a|b)*
+
+language with no more than three a's
+
+b*|b*ab*|b*ab*ab*|b*ab*ab*ab*
+
+language with a number of a's divisible by three
+
+(b*ab*ab*ab*)*
+
+language with exactly one occurrence of substring aaa
+
+(b|ab|aab)*aaa(b|ba|baa)*
+
+language with exactly one occurence of substring bb
+
+(a|ab)*bb(a|ba)*
+
+language with no more than three b's
+
+(a|b)(ab|ba)(abb|bba)|a*
+
+//////////////////////////////////////////////////////////////////////////////////
+
+all binary numbers with no leading zeroes
+
+(10)*|1
+
+all even binary numbers 
+
+cxcx0|(10)*
+
+all binary numbers with power of 2
+
+1|(10)*0*
+
+all binary numbers with power of 2 or are odd
+
+(0|1)*1|0*10*
+
+
+
+
+
+
+

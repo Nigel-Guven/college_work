@@ -1,0 +1,6 @@
+c:\users\nigel.guven\documents\visual studio 2015\Projects\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.exe.config
+c:\users\nigel.guven\documents\visual studio 2015\Projects\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.csprojResolveAssemblyReference.cache
+c:\users\nigel.guven\documents\visual studio 2015\Projects\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.exe
+c:\users\nigel.guven\documents\visual studio 2015\Projects\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.pdb
+c:\users\nigel.guven\documents\visual studio 2015\Projects\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.exe
+c:\users\nigel.guven\documents\visual studio 2015\Projects\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.pdb

@@ -1,0 +1,14 @@
+﻿Build started 05/11/2015 16:41:42.
+     1>Project "h:\CA296ConsoleTemplate2\CA296ConsoleTemplate2\CA296ConsoleTemplate2.vcxproj" on node 2 (Build target(s)).
+     1>_MASM:
+         Assembling main.asm...
+         cmd.exe /C "C:\Users\guvenn2\AppData\Local\Temp\tmp9945740ea908412185eec337cb7b0e8f.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\main.obj" /W3 /errorReport:prompt  /Tamain.asm
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"h:\CA296ConsoleTemplate2\Debug\CA296ConsoleTemplate2.exe" /INCREMENTAL /NOLOGO msvcrt.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"h:\CA296ConsoleTemplate2\Debug\CA296ConsoleTemplate2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /ENTRY:"main" /DYNAMICBASE /NXCOMPAT /IMPLIB:"h:\CA296ConsoleTemplate2\Debug\CA296ConsoleTemplate2.lib" /MACHINE:X86 Debug\main.obj
+         CA296ConsoleTemplate2.vcxproj -> h:\CA296ConsoleTemplate2\Debug\CA296ConsoleTemplate2.exe
+     1>Done Building Project "h:\CA296ConsoleTemplate2\CA296ConsoleTemplate2\CA296ConsoleTemplate2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.05

@@ -1,0 +1,6 @@
+c:\users\nigel.guven\documents\visual studio 2015\Projects\EmailValidation\EmailValidation\bin\Debug\EmailValidation.exe.config
+c:\users\nigel.guven\documents\visual studio 2015\Projects\EmailValidation\EmailValidation\bin\Debug\EmailValidation.exe
+c:\users\nigel.guven\documents\visual studio 2015\Projects\EmailValidation\EmailValidation\bin\Debug\EmailValidation.pdb
+c:\users\nigel.guven\documents\visual studio 2015\Projects\EmailValidation\EmailValidation\obj\Debug\EmailValidation.csprojResolveAssemblyReference.cache
+c:\users\nigel.guven\documents\visual studio 2015\Projects\EmailValidation\EmailValidation\obj\Debug\EmailValidation.exe
+c:\users\nigel.guven\documents\visual studio 2015\Projects\EmailValidation\EmailValidation\obj\Debug\EmailValidation.pdb
