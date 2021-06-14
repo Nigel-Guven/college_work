@@ -73,7 +73,7 @@ Clever Carpooling is an Android application which aims to facilitate and improve
 
 Testing is being performed in two areas: Functional and Non-Functional tests. The diagram shows our testing tree.
 
-![](res/SSADM/testingplan_PNG.png)
+![](final_year_project/res/SSADM/testingplan_PNG.png)
 
 
 ## Built With
